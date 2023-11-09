@@ -537,28 +537,29 @@
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <!--<form name="sentMessage" id="contactForm" novalidate="novalidate">-->
+                        <form action="https://formspree.io/f/xdorjjyz" method="POST">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
                                     <input type="text" class="form-control p-4" id="name" placeholder="Nombre completo"
-                                        required="required" data-validation-required-message="Ingrese su nombre"/>
+                                        required="required" data-validation-required-message="Ingrese su nombre" name="name"/>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group col-sm-6">
                                     <input type="email" class="form-control p-4" id="email" placeholder="Correo electronico"
-                                        required="required" data-validation-required-message="Ingrese su Correo" />
+                                        required="required" data-validation-required-message="Ingrese su Correo" name="_replyto"/>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <input type="text" class="form-control p-4" id="subject" placeholder="Asunto"
-                                    required="required" data-validation-required-message="Ingrese el asunto" />
+                                    required="required" data-validation-required-message="Ingrese el asunto" name="subject"/>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
                                 <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="mensaje"
                                     required="required"
-                                    data-validation-required-message="Please enter your message"></textarea>
+                                    data-validation-required-message="Please enter your message" name="message"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
