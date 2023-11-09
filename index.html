@@ -363,7 +363,7 @@
                                 </div>
                                 <div class="control-group col-sm-6">
                                     <input type="email" class="form-control p-4" id="email" placeholder="Correo electronico"
-                                        required="required" data-validation-required-message="Ingrese su Correo" name="_replyto"/>
+                                        required="required" data-validation-required-message="Ingrese su Correo" name="email"/>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -378,6 +378,12 @@
                                     data-validation-required-message="Please enter your message" name="message"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
+
+                            <div class="control-group col-sm-6">
+                                <input type="file" class="form-control p-4" id="file" placeholder="Cargar archivo" name="file"/>
+                                <p class="help-block text-danger"></p>
+                            </div>
+
                             <div>
                                 <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Enviar</button>
                             </div>
